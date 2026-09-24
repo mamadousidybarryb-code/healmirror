@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HealMirror — Le miroir santé intelligent</title>
+  <meta name="description" content="HealMirror centralise les rappels, les mesures de santé et les alertes utiles dans un miroir portable pensé pour les seniors et leurs proches.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230c2d48'/%3E%3Cpath d='M18 34h9l4-10 6 19 4-9h6' fill='none' stroke='%235dd6cf' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="HealMirror, accueil">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M8 21h7l3-8 5 16 4-8h6"/></svg></span>
+      <span>HEAL<span>MIRROR</span></span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav id="main-nav" aria-label="Navigation principale">
+      <a href="#solution">La solution</a>
+      <a href="#fonctionnement">Fonctionnement</a>
+      <a href="#offres">Offres</a>
+      <a href="#confiance">Confiance</a>
+      <a class="nav-cta" href="#offres">Découvrir HealMirror</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Le suivi santé qui trouve sa place dans le quotidien</p>
+        <h1>Un miroir pour mieux voir ce qui compte.</h1>
+        <p class="hero-text">HealMirror réunit rappels, mesures et alertes utiles dans un objet portable et facile à lire. Le senior garde ses habitudes. Ses proches suivent l’essentiel, avec son accord.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#fonctionnement">Voir comment ça marche</a>
+          <a class="button secondary" href="#offres">Découvrir les offres</a>
+        </div>
+        <div class="hero-trust" aria-label="Principaux bénéfices">
+          <span>Portable</span><span>5 à 7 jours d’autonomie</span><span>Données protégées</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="image-frame"><img src="healmirror-hero.png" alt="Prototype HealMirror ouvert affichant les informations de santé de Jeanne"></div>
+        <div class="floating-note"><strong>Bonjour Jeanne</strong><span>Votre suivi du jour est prêt.</span></div>
+      </div>
+    </section>
+
+    <section class="problem" aria-labelledby="problem-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Le constat</p>
+        <h2 id="problem-title">Le suivi existe. La régularité manque.</h2>
+        <p>Les outils actuels demandent souvent d’ouvrir une application, de porter un objet ou de penser à mesurer. HealMirror ramène l’information à un geste familier.</p>
+      </div>
+      <div class="problem-grid">
+        <article class="problem-card reveal"><span>01</span><h3>Des rappels oubliés</h3><p>Médicaments, mesures et rendez-vous passent parfois au second plan.</p></article>
+        <article class="problem-card reveal"><span>02</span><h3>Des outils dispersés</h3><p>Tensiomètre, balance et application ne racontent pas toujours la même histoire au même endroit.</p></article>
+        <article class="problem-card accent reveal"><span>03</span><h3>Des proches peu rassurés</h3><p>Les familles veulent savoir que tout va bien sans multiplier les appels.</p></article>
+      </div>
+    </section>
+
+    <section class="solution" id="solution">
+      <div class="solution-image reveal"><img src="healmirror-anatomie.png" alt="Vue du design compact et des composants du miroir HealMirror"></div>
+      <div class="solution-copy reveal">
+        <p class="eyebrow">La solution</p>
+        <h2>Un point de contact santé, simple et rassurant.</h2>
+        <p>Le miroir affiche l’essentiel en grands caractères. Il récupère les mesures de capteurs compatibles et les partage seulement avec les personnes autorisées.</p>
+        <ul class="feature-list">
+          <li><span class="icon">M</span><div><strong>Miroir intelligent</strong><p>Rappels, constantes et messages compréhensibles en un coup d’œil.</p></div></li>
+          <li><span class="icon">C</span><div><strong>Capteurs compatibles</strong><p>Tensiomètre, balance, oxymètre et thermomètre restent les sources de mesure.</p></div></li>
+          <li><span class="icon">A</span><div><strong>Application famille</strong><p>Historique, alertes utiles et partage choisi avec l’aidant.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="measurements" id="fonctionnement">
+      <div class="section-heading light reveal">
+        <p class="eyebrow">Une lecture claire</p>
+        <h2>Les informations utiles, au bon moment.</h2>
+      </div>
+      <div class="measure-grid reveal">
+        <div><span class="measure-icon">♥</span><strong>Tension</strong><small>mmHg</small></div>
+        <div><span class="measure-icon">⌁</span><strong>Fréquence cardiaque</strong><small>bpm</small></div>
+        <div><span class="measure-icon">O₂</span><strong>Saturation</strong><small>SpO₂</small></div>
+        <div><span class="measure-icon">kg</span><strong>Poids et tendance</strong><small>IMC</small></div>
+        <div><span class="measure-icon">°C</span><strong>Température</strong><small>thermomètre</small></div>
+        <div><span class="measure-icon">✓</span><strong>Traitement</strong><small>rappel</small></div>
+      </div>
+      <div class="flow reveal" aria-label="Parcours d'une mesure">
+        <span>Capteur</span><i></i><span>Miroir</span><i></i><span>Application</span><i></i><span>Alerte si besoin</span>
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="story-photo reveal"><img src="jeanne.png" alt="Jeanne, senior autonome, utilisant HealMirror chez elle"></div>
+      <div class="story-copy reveal">
+        <p class="eyebrow">Une matinée avec HealMirror</p>
+        <h2>Jeanne, 76 ans, garde le contrôle.</h2>
+        <ol>
+          <li><time>08:00</time><p>Jeanne se prépare devant son miroir.</p></li>
+          <li><time>08:02</time><p>HealMirror lui rappelle son médicament du matin.</p></li>
+          <li><time>08:05</time><p>Sa tension remonte depuis son tensiomètre compatible.</p></li>
+          <li><time>08:10</time><p>L’application confirme que tout est normal ou prévient son aidant si un seuil mérite son attention.</p></li>
+        </ol>
+        <p class="story-result"><strong>Le résultat :</strong> un suivi plus régulier, sans contrainte lourde.</p>
+      </div>
+    </section>
+
+    <section class="offers" id="offres">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Des offres évolutives</p>
+        <h2>Choisir le niveau d’accompagnement adapté.</h2>
+        <p>Les prix présentés sont indicatifs et seront confirmés après les tests utilisateurs.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card reveal"><p class="plan">Starter</p><h3>199 €</h3><span>Achat unique</span><ul><li>Miroir HealMirror</li><li>Application de base</li><li>Rappels et affichage des mesures</li></ul><a href="#roadmap">Suivre le lancement</a></article>
+        <article class="price-card featured reveal"><p class="plan">Plus</p><div class="popular">Cœur du modèle</div><h3>9,90 €</h3><span>par mois + miroir à 199 €</span><ul><li>Historique étendu</li><li>Alertes famille</li><li>Cloud sécurisé</li></ul><a href="#roadmap">Découvrir le projet</a></article>
+        <article class="price-card reveal"><p class="plan">Family Care</p><h3>19,90 €</h3><span>par mois + miroir à 199 €</span><ul><li>Plusieurs aidants</li><li>Support prioritaire</li><li>Rapport mensuel famille</li></ul><a href="#roadmap">Suivre le lancement</a></article>
+        <article class="price-card pack reveal"><p class="plan">Pack Santé</p><h3>349 €</h3><span>Miroir + 3 capteurs + installation</span><ul><li>Tensiomètre compatible</li><li>Balance et oxymètre</li><li>Prise en main accompagnée</li></ul><a href="#roadmap">Découvrir le projet</a></article>
+      </div>
+    </section>
+
+    <section class="trust" id="confiance">
+      <div class="trust-copy reveal">
+        <p class="eyebrow">La confiance avant tout</p>
+        <h2>Vos données de santé restent vos données.</h2>
+        <p>HealMirror prévoit un hébergement adapté aux données de santé, des accès contrôlés et un partage fondé sur le consentement. Le modèle économique repose sur le produit et le service, jamais sur la revente des données.</p>
+      </div>
+      <div class="trust-points reveal">
+        <div><strong>Consentement</strong><span>Vous choisissez qui peut consulter les informations.</span></div>
+        <div><strong>Chiffrement</strong><span>Les échanges et les données sont protégés.</span></div>
+        <div><strong>Transparence</strong><span>Aucune revente des données de santé.</span></div>
+      </div>
+      <p class="medical-note">HealMirror ne remplace ni un professionnel de santé ni un diagnostic médical. Le produit est actuellement au stade de projet et de prototype.</p>
+    </section>
+
+    <section class="roadmap" id="roadmap">
+      <div class="section-heading reveal"><p class="eyebrow">Feuille de route</p><h2>Du prototype au lancement commercial.</h2></div>
+      <div class="timeline reveal">
+        <div><span>01</span><small>Mois 1–3</small><strong>Prototype fonctionnel</strong><p>Design, affichage, application et connexion aux capteurs.</p></div>
+        <div><span>02</span><small>Mois 4–6</small><strong>Tests utilisateurs</strong><p>10 à 20 seniors et aidants pour valider l’ergonomie.</p></div>
+        <div><span>03</span><small>Mois 7–9</small><strong>Pré-lancement</strong><p>Site, pharmacies pilotes et organisation du support.</p></div>
+        <div><span>04</span><small>Mois 10–12</small><strong>Lancement</strong><p>Vente directe, abonnement et amélioration continue.</p></div>
+      </div>
+    </section>
+
+    <section class="closing reveal">
+      <p class="eyebrow">HealMirror</p>
+      <h2>La santé vous accompagne partout.</h2>
+      <p>Un miroir portable pour rendre le suivi plus visible, plus simple et plus rassurant.</p>
+      <a class="button primary" href="#accueil">Revoir le produit</a>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#accueil"><span>HEAL<span>MIRROR</span></span></a><p>Projet entrepreneurial — Groupe 16, IONIS‑STM</p><p>© 2026 HealMirror</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
